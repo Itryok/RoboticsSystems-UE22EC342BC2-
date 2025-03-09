@@ -9,3 +9,4 @@ Create a launch file which launches a turtlesim node and makes it navigate in an
 ## Task 2: Submission deadline tbd
 
 Create three link arm with desired demensions having spherical configuration attached an end effector 
+[![Watch the video for reference](https://img.youtube.com/vi/meQ3RMCv6qw/maxresdefault.jpg)](https://www.youtube.com/watch?v=meQ3RMCv6qw)
