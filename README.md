@@ -1,6 +1,6 @@
 # RoboticsSystems(UE22EC342BC2)
 
-## Task 1: Submission deadline tbd
+## Task 1: Submission deadline 12/02/2025
 
 Create a launch file which launches a turtlesim node and makes it navigate in any shape as demonstrated in the following video:
 
