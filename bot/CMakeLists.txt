@@ -10,17 +10,15 @@ find_package(ament_cmake REQUIRED)
 
 # Install launch, URDF, and params files
 install(
-  DIRECTORY launch urdf params
+  DIRECTORY launch urdf params worlds config
   DESTINATION share/${PROJECT_NAME}
 )
-
 
 # Install Python script
 install(
   PROGRAMS scripts/square_movement.py
   DESTINATION lib/${PROJECT_NAME}
 )
-
 
 # Testing (optional)
 if(BUILD_TESTING)
