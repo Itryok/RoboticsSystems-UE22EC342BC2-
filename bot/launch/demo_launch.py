@@ -13,9 +13,12 @@ def generate_launch_description():
     modelFileRelativePath = 'urdf/bot.xacro'
     pathModelFile = os.path.join(get_package_share_directory(namePackage),modelFileRelativePath)
     robotDescription = xacro.process_file(pathModelFile).toxml() 
-    gazebo_rosPackageLaunch = PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('ros_gz_sim'),'launch','gz_sim.launch.py')) #launch file for gazebo ros package
+    gazebo_rosPackageLaunch = PythonLaunchDescriptionSource(os.path.join(get_package_share_directory
+                                                                        ('ros_gz_sim'),'launch','gz_sim.launch.py')) #launch file for gazebo ros package
     
-    gazeboLaunch = IncludeLaunchDescription(gazebo_rosPackageLaunch,launch_arguments = {'gz_args':['-r -v -v4 empty.sdf'],'on_exit_shutdown':'true'}.items())
+    gazeboLaunch = IncludeLaunchDescription(gazebo_rosPackageLaunch,launch_arguments = 
+                                            {'gz_args':['-r -v -v4 empty.sdf'],
+                                            'on_exit_shutdown':'true'}.items())
     
     spawnModelNodeGazebo = Node(
         package='ros_gz_sim',
